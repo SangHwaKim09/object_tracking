@@ -1,11 +1,1 @@
-## 배달로봇 사양
-<<<<<<< HEAD
-- 2D LiDAR(15Hz, 최대 감지거리 12m)
-=======
-- 2D LiDAR(15Hz, 360도)
->>>>>>> branch-b
-- RGB 카메라(60 fps, 720p)
-- IMU(400Hz)
-- 바퀴 엔코더(2KHz)
-- 모터 드라이버
-- LTE 모듈(핑 1\~5ms 업로드 및 다운로드 속도 95\~100Mbps)
+## windows 웹캠프로그램을 이용한 실시간 blue object 추적
