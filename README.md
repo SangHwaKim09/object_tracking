@@ -1,4 +1,4 @@
-## windows 웹캠프로그램을 이용한 실시간 blue object 추적
+## windows 웹캠프로그램을 이용한 실시간 object 추적
 
 ## Linux 실행 방법
 
@@ -14,5 +14,5 @@ pip install -r requirements.txt
 activate한 상태에서 실행합니다. (종료: `q` 또는 `ESC`)
 
 ```bash
-python opencv/blue_detect_linux.py
+python opencv/color_detect_linux.py
 ```
