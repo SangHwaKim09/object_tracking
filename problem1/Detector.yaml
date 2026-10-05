@@ -1,0 +1,21 @@
+# 인지(검출) 설정 — 튜닝 후 HSV_tuning.py가 HSV 값을 덮어씀
+camera:
+  index: 0          # /dev/video0
+  width: 640
+  height: 480
+
+hsv:
+  # [H, S, V]  (OpenCV: H 0~179, S/V 0~255)
+  # 빨간색처럼 H가 0/179 경계를 넘으면 범위를 2개 사용
+  ranges:
+    - lower: [93, 120, 35]
+      upper: [130, 255, 255]
+
+min_area_ratio: 0.002   # 화면 면적 대비 최소 면적비 (640x480 기준 약 614px)
+blur_ksize: 5           # 가우시안 블러 커널 (홀수)
+morph_ksize: 5          # 잡음 제거(열기/닫기) 커널
+
+depth:
+  # 거리(dist_cm)를 믿을 수 없으면 비움(--). 카메라 바로 앞을 손 등으로 가리면 틀린 값이 나오기 때문
+  min_valid_ratio: 0.5  # 목표 영역에서 깊이가 측정된 픽셀 비율이 이보다 낮으면 비움
+  max_spread_cm: 5.0    # 목표 영역 깊이 값의 흩어짐(p25~p75)이 이보다 크면 비움
