@@ -2,3 +2,5 @@ opencv-python==5.0.0.93
 numpy==2.5.3
 matplotlib==3.11.2
 pyrealsense2==2.58.4.10922
+PyYAML==6.0.3
+ruamel.yaml==0.19.1
